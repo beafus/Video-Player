@@ -16,21 +16,23 @@ The project has two main folders, www and server. In order to tun the applicatio
   * After that you should see something like this
     * Static file server running at => http://localhost:8888/
   * Now go to your browser and copy that http address followed by myvideo.html
-    * http://localhost:8888/myvideo.html
-## How it is done
-* The list of videos are obtained from downloading and parsing the supplied AJAX file
-* Each video has a thumbnail and the main video  also displays a title
-* The video description appears on the video after the video has completed by 25% and uses a css3 animation to slide in from the left.
-* The videos the user has watched on their browser are  stored in localStorage so those
-are displayed at the end of the list (displaying unwatched videos first)
-* There is a full implementation of a complete custom set of video player controls – including:
-  * Play/Pause Button
-  * Progress Bar
-  * Stop button
-  * Full screen mode / theatre mode
-* When a video has finished the next video is displayed
-* Also the progress of the current video is stored in localstorage when paused, so you can 
-re-seek to its saved progress if the page is refreshed or otherwise loaded again.
+    *  http://localhost:8888/myvideo.html
+    
+##  How it is done
+
+ * The list of videos are obtained from downloading and parsing the supplied AJAX file
+ * Each video has a thumbnail and the main video  also displays a title
+ * The video description appears on the video after the video has completed by 25% and uses a css3 animation to slide in from the left.
+ * The videos the user has watched on their browser are  stored in localStorage so those
+ are displayed at the end of the list (displaying unwatched videos first)
+ * There is a full implementation of a complete custom set of video player controls – including:
+   * Play/Pause Button
+   * Progress Bar
+   * Stop button
+   * Full screen mode / theatre mode
+ * When a video has finished the next video is displayed
+ * Also the progress of the current video is stored in localstorage when paused, so you can 
+ re-seek to its saved progress if the page is refreshed or otherwise loaded again.
 
 
  
