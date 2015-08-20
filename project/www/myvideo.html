@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  
+    <style>
+    .starter-template {
+      padding: 40px 15px;
+      text-align: center;
+     }
+
+     #welcome {
+        text-align: center;
+        background-color: #D8D8D8;
+        border-radius: 5px;
+       
+        margin-left: 30px;
+        margin-right: 30px;
+
+     }
+
+     #videoHook{
+
+    text-align: center;
+     }
+
+     .fullvideo{
+       text-align: center;
+     }
+     #media-controls{
+      text-align: left;
+      margin-left: 180px;
+     }
+
+
+    </style>
+
+
+    <title>IIT News</title>
+   
+
+
+    <!-- acces to  jQuery from internet -->
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <!-- access to  js file-->
+    <script src="video.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!-- own style CSS-->
+    <link href="css/estilo.css" rel="stylesheet"/>
+   
+  </head>
+
+  <body>
+
+<div id="welcome">
+   <h1> My Videos </h1>
+   <img src="img/video.png" height="40px" width="40px" />
+   <br></br>
+   <p id="welcomep">Click on the image to display the video</p>
+   </div>
+
+
+  
+
+
+    <div class="container">
+<div class="fullvideo">
+
+      <div id="videoHook" ></div>
+
+      <script>
+        videoapi.start($("#videoHook"),"clips.json");
+      </script> 
+  
+
+
+      <div id="videoSelected" >  
+      </div>
+
+
+      <div  id='media-controls' style="display:none">
+    
+        <button id="play-pause-button" class="play" title='play' onclick="videoapi.playpause()">Play</button>
+        <button id="stop-button" class="stop"  onclick="videoapi.stop()">Stop</button>
+        <button id='full-screen-button' class='fullscreen'  onclick='videoapi.theatre()'>Full screen</button>
+        <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+
+      </div>
+
+      </div>
+
+
+ 
+
+
+
+      <div class="watchedFirst" class="row">  
+           <div id="nonWatched" > </div>
+      </div>
+
+   
+       <div id="watchedFirst" > </div>   
+
+
+     <!-- <div class="hook">
+      </div>-->
+
+    </div><!-- /.container -->
+  </body>
+</html>
